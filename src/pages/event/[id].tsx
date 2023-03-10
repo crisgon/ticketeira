@@ -1,5 +1,5 @@
 import { EventLayout } from "@/layouts/EventLayout/Event";
-import { EventTemplate } from "@/templates/Event/Event";
+import { EventContainer } from "@/containers/Event/Event";
 import { useRouter } from "next/router";
 import { NextPageWithLayout } from "src/@types/next";
 
@@ -7,7 +7,7 @@ const Event: NextPageWithLayout = () => {
   const router = useRouter();
   const { id } = router.query;
 
-  return <EventTemplate event={{ id: id as string }} />;
+  return <EventContainer event={{ id: id as string }} />;
 };
 
 export default Event;

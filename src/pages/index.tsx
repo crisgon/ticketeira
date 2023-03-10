@@ -1,6 +1,6 @@
 import { GetServerSideProps } from "next";
 
-import HomeTemplate from "@/templates/Home/Home";
+import HomeContainer from "@/containers/Home/Home";
 import { DefaultLayout } from "@/layouts/Default/Default";
 import { NextPageWithLayout } from "src/@types/next";
 import { api } from "@/api";
@@ -11,7 +11,7 @@ interface IndexProps {
 
 const Index: NextPageWithLayout<IndexProps> = ({ animes }) => {
   console.log(animes);
-  return <HomeTemplate data={animes} />;
+  return <HomeContainer data={animes} />;
 };
 
 export default Index;

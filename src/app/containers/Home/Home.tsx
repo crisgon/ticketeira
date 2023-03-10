@@ -6,11 +6,11 @@ import partyPNG from "@/assets/party.png";
 import { Box } from "@/components/Box/Box";
 import { Button } from "@/components/Button/Button";
 
-interface HomeTemplateProps {
+interface HomeContainerProps {
   data: any;
 }
 
-export default function HomeTemplate({ data }: HomeTemplateProps) {
+export default function HomeContainer({ data }: HomeContainerProps) {
   return (
     <S.Home>
       <Button style={{ margin: "1rem" }}>

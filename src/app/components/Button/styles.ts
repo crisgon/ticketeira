@@ -1,6 +1,7 @@
+import { Button as AriaButton } from "ariakit/button";
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled(AriaButton)`
   width: fit-content;
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   background-color: ${({ theme }) => theme.colors.primary};
